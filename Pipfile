@@ -5,8 +5,18 @@ name = "pypi"
 
 [packages]
 flask = "*"
+python-dotenv = "*"
+flask-cors = "*"
+flask-sqlalchemy = "*"
+psycopg2 = "*"
+waitress = "*"
 
 [dev-packages]
 
 [requires]
 python_version = "3.11"
+
+[scripts]
+dev = "flask run"
+seed = "python seed.py"
+start = "waitress app:app"
